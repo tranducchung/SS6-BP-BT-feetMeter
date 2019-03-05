@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VHTM</title>
+</head>
+<h1>Chuyển đổi Feet - Meter</h1>
+<p> Feet =  <input type="number" id="Feet" oninput="trade(this.value)"> ==> Meter = <span id="Meter"></span></p>
+
+<p> Meter = <input type="number" id="Meter1" onchange="trade1(this.value)" > ==> Feet = <span id="Feet1"></span> </p>
+
+<body>
+<script>
+     function trade(F) {
+         document.getElementById("Meter").innerHTML = (F/3.2808)
+   }
+    function trade1(M) {
+         document.getElementById("Feet1").innerHTML = (M*3.2808)
+    }
+</script>
+</body>
+</html>
